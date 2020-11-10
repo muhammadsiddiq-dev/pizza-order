@@ -28,7 +28,9 @@ for (let index = 0; index < SizeOfPizza.length; index++) {
 
   newRadioSpan.textContent = `${SizeOfPizza[index]}`
   newRadioInput.value = (SizeOfPizza[index]);
-  newRadioInput.type = 'checkbox';
+  newRadioInput.type = 'radio';
+  newRadioInput.name = 'sizeRadio'
+  newRadioInput.required = true;
   newRadioInput.textContent = `${SizeOfPizza[index]}`;
   newRadioInput.classList.add(`size-of-pizza-checkbox-${SizeOfPizza[index]}`,'custom-checkbox');
   elSizeOfPizza.appendChild(newRadioInput);
